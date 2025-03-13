@@ -45,19 +45,6 @@ The following settings and improvements have been added for better **team collab
 
 ---
 
-## Project Structure
-```
-VersionInfoApp/
-│── VersionInfoApp.csproj          # .NET 8 Project file
-│── Program.cs                     # Main program that retrieves version info
-│── README.md                      # Project documentation
-│── VersionInfoApp.Tests/           # xUnit test project
-│   ├── VersionInfoTests.cs        # Test to verify Git commit hash retrieval
-│   ├── VersionInfoApp.Tests.csproj
-│── .gitignore                     # Git ignore settings
-│── .gitattributes                  # Git attributes for repo settings
-```
-
 ## Testing Output Example
 ```
 Retrieved C# Project Version with Hash: 1.0.0+77b569a6328ef9e8098a174cfce2051763188b29
