@@ -1,11 +1,27 @@
+using System.Reflection;
+using Xunit;
+using Xunit.Abstractions;
+
 namespace CSharpVersionInfoApp.Tests
 {
-    public class UnitTest1
+    public class VersionInfoTests
     {
-        [Fact]
-        public void Test1()
-        {
+        private readonly ITestOutputHelper _output;
 
+        public VersionInfoTests(ITestOutputHelper output)
+        {
+            _output = output;
+        }
+
+        [Fact]
+        public void VersionShouldIncludeGitCommitHash()
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var version = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion ?? "Unknown";
+
+            _output.WriteLine($"Retrieved Version: {version}"); // Logs to xUnit output
+
+            Assert.Contains("+", version); // Commit hash should be present
         }
     }
 }
