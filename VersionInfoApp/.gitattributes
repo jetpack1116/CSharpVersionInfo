@@ -1,0 +1,9 @@
+# Normalize text files to avoid line-ending issues
+* text=auto
+
+# Ensure C# files use proper LF handling
+*.cs text eol=lf
+
+# Ignore binary files from text conversion
+*.dll binary
+*.exe binary
