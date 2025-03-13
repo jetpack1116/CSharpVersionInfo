@@ -8,18 +8,32 @@ This project retrieves and displays the version information of a **.NET 8 C# pro
 - Includes **xUnit tests** to verify version retrieval  
 - Supports **team development** with GitHub  
 - Clear **logging output**:  
-  ```
-  Retrieved C# Project Version with Hash: 1.0.0+<commit-hash>
-  ```
 
-## How to Run
-```sh
-dotnet run
+---
+
+## How to Run (Visual Studio 2022)
+1. Open **VersionInfoApp.sln** in **Visual Studio 2022**.
+2. In **Solution Explorer**, right-click `VersionInfoApp` → **Set as Startup Project**.
+3. Click the **"Start" (▶) button** OR Press:
+   - `F5` (Run with Debugging)
+   - `Ctrl + F5` (Run without Debugging)
+
+---
+
+## How to Test (Visual Studio 2022)
+### **Option 1: Using Test Explorer**
+1. Open **Test Explorer**: `Test` → `Test Explorer` (`Ctrl + E, T`).
+2. Click **Run All**.
+
+### **Option 2: Run Tests via Solution Explorer**
+1. Open **Solution Explorer**.
+2. Right-click `VersionInfoApp.Tests` → Select **Run Tests**.
+
+---
+
+## Testing Output Example
 ```
-
-## How to Test
-```sh
-dotnet test
+Retrieved C# Project Version with Hash: 1.0.0+77b569a6328ef9e8098a174cfce2051763188b29
 ```
 
 ---
@@ -45,7 +59,3 @@ The following settings and improvements have been added for better **team collab
 
 ---
 
-## Testing Output Example
-```
-Retrieved C# Project Version with Hash: 1.0.0+77b569a6328ef9e8098a174cfce2051763188b29
-```
