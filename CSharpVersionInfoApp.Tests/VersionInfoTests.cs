@@ -19,7 +19,7 @@ namespace CSharpVersionInfoApp.Tests
             var assembly = Assembly.GetExecutingAssembly();
             var version = assembly.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion ?? "Unknown";
 
-            _output.WriteLine($"Retrieved Version: {version}"); // Logs to xUnit output
+            _output.WriteLine($"Retrieved C# Project Version with Hash: {version}"); // Logs to xUnit output
 
             Assert.Contains("+", version); // Commit hash should be present
         }

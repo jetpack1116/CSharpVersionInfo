@@ -1,0 +1,10 @@
+# Build Folders
+bin/
+obj/
+
+# Logs
+*.log
+
+# User-specific files
+.vs/
+.vscode/
