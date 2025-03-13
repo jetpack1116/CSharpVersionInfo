@@ -52,10 +52,6 @@ The following settings and improvements have been added for better **team collab
 - **Consistent logging output format** for debugging.
 - **Encapsulated version logic** inside `Program.cs` for easy modifications.
 
-### **Best Practices for Team Workflow**
-- **Uses `README.md`** for documentation.
-- **Unit tests validate version retrieval**, reducing risk of errors.
-- **Followed GitHub collaboration best practices** (branching, commits, PRs if needed).
 
 ---
 
