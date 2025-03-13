@@ -14,7 +14,7 @@ This project retrieves and displays the version information of a **.NET 8 C# pro
 ## How to Run (Visual Studio 2022)
 1. Open **VersionInfoApp.sln** in **Visual Studio 2022**.
 2. In **Solution Explorer**, right-click `VersionInfoApp` → **Set as Startup Project**.
-3. Click the **"Start" (▶) button** OR Press:
+3. Click the **"Start" button** OR Press:
    - `F5` (Run with Debugging)
    - `Ctrl + F5` (Run without Debugging)
 
@@ -42,20 +42,20 @@ Retrieved C# Project Version with Hash: 1.0.0+77b569a6328ef9e8098a174cfce2051763
 The following settings and improvements have been added for better **team collaboration**:
 
 ### **GitHub Repository Settings**
-- ✅ **Invited `yutaro.yamada@hutzper.com`** as a collaborator.
-- ✅ Configured `.gitignore` to **exclude unnecessary files** (bin, obj, logs).
-- ✅ Added `.gitattributes` to **ensure cross-platform compatibility**.
+- **Invited `yutaro.yamada@hutzper.com`** as a collaborator.
+- Configured `.gitignore` to **exclude unnecessary files** (bin, obj, logs).
+- Added `.gitattributes` to **ensure cross-platform compatibility**.
 
 ### **Project Setup for Team Development**
-- ✅ **Separate test project** using **xUnit** for easy testing.
-- ✅ **Version retrieval automated** with `.NET 8 SourceLink` to include Git commit hash.
-- ✅ **Consistent logging output format** for debugging.
-- ✅ **Encapsulated version logic** inside `Program.cs` for easy modifications.
+- **Separate test project** using **xUnit** for easy testing.
+- **Version retrieval automated** with `.NET 8 SourceLink` to include Git commit hash.
+- **Consistent logging output format** for debugging.
+- **Encapsulated version logic** inside `Program.cs` for easy modifications.
 
 ### **Best Practices for Team Workflow**
-- ✅ **Uses `README.md`** for documentation.
-- ✅ **Unit tests validate version retrieval**, reducing risk of errors.
-- ✅ **Followed GitHub collaboration best practices** (branching, commits, PRs if needed).
+- **Uses `README.md`** for documentation.
+- **Unit tests validate version retrieval**, reducing risk of errors.
+- **Followed GitHub collaboration best practices** (branching, commits, PRs if needed).
 
 ---
 
